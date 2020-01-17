@@ -1,0 +1,44 @@
+<%- include("partials/header") %>
+<div class="container">
+    <div class="row">
+        <h1 style="text-align: center;color:#3373FF">Create Account</h1>
+        <div style="width: 30%; margin: 25px auto;">
+            <form action="/register" method="post">
+                <div class="form-group">
+                    <label for="name">Email Address<span style="color:red;"> *</span></label>
+                    <input class="form-control" type="email" required title="Email is required" name="email" placeholder="john@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="name">Username <span style="color:red;"> *</span></label>
+                    <input class="form-control" type="text" pattern=".{4,15}" required title="Please enter at least 4 characters." name="username" placeholder="At least 4 characters">
+                </div>
+                <div class="form-group">
+                    <label for="name">Password<span style="color:red;"> *</span></label>
+                    <input class="form-control" type="password" pattern=".{4,15}" required title="Please enter at least 4 characters." name="password" placeholder="At least 4 characters">
+                </div>
+                <div class="form-group">
+                    <label for="name">Last Name</label>
+                    <input class="form-control" type="text" name="lastName" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="name">First Name</label>
+                    <input class="form-control" type="text" name="firstName" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="name">Avatar</label>
+                    <input class="form-control" type="text" name="avatar" placeholder=" Optional">
+                </div>
+                <div class="form-group">
+                All<span style="color:red;"> * </span>are required
+                    <button class="btn btn-lg btn-primary btn-block">Join Now</button>
+                </div>
+                <div class="form-group">
+                    <label for="name">Janitor</label>
+                    <input class="form-control" type="text" name="adminCode" placeholder="Ignore this field if you don't know the passcode">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<%- include("partials/footer") %>
+

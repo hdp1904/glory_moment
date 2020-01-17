@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Glorious Moments With You - Love, Hope and Future</title>
+	    <script
+            src="https://code.jquery.com/jquery-1.12.4.js"
+            integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/stylesheets/main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+        
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+     </button>
+                <a class="navbar-brand" href="/campgrounds">Explore</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar1-collapse">
+                   <ul class="nav navbar-nav navbar-right">
+                    <% if(!currentUser){ %>
+                    <li><a href="/login" class="btn btn-lg">Log in</a></li>
+                    <li><a href="/register" class="btn btn-success">Sign up</a></li>
+                    <% } else {%>
+                    <li><a href="#"><%= currentUser.username %></a></li>
+                    <li><a href="/logout">Log out</a></li>
+                    <% } %>
+                 </ul> 
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+       <% if(error && error.length > 0) { %>
+         <div class="alert alert-danger"><p><%=error %></p></div>
+       <% } %>
+       
+       <% if(success && success.length > 0) { %>
+         <div class="alert alert-success"><p><%= success %></p></div>
+       <% } %>
+    </div>
+    <div class="container">

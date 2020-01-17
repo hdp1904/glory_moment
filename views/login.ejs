@@ -1,0 +1,32 @@
+<%- include("partials/header") %>
+<div class="container">
+    <div class="row">
+        <h1 style="text-align: center;color:#3373FF">Sign In</h1>
+        <div style="width: 30%; margin: 25px auto;">
+            <form action="/login" method="post">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="username" placeholder="Username">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="password" name="password" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-lg btn-primary btn-block">SIGN IN</button>
+                </div>
+            </form>
+            <a href="/register">Create Account</a>
+            <p>
+            <form>
+             <a style="color:red;" href="/forgot">Forgot Password?</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+ <p>　</p>
+ <p>　</p>
+ <p>　</p>
+ <p>　</p>
+ <p>　</p>
+
+<%- include("partials/footer") %>

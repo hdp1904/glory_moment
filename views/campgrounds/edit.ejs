@@ -1,0 +1,58 @@
+<%- include("../partials/header") %>
+    <div class="row">
+        <h1 style="text-align: center">Update <%= campground.name %></h1>
+        <div style="width: 30%; margin: 25px auto;">
+            <form action="/campgrounds/<%=campground._id%>?_method=PUT" method="POST">
+                <div class="form-group">
+                    <label for="name">Topic<span style="color:red;"> *</span></label>
+                    <input class="form-control" type="text" name="campground[name]" id="name" value="<%= campground.name %>" required>
+                </div>
+                <div class="form-group">
+                    <label for="image">Image URL<span style="color:red;"> *</span></label>
+                    <input class="form-control" type="url" name="campground[image1]" id="image1" value="<%= campground.image1 %>" required>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="url" name="campground[image2]" id="image2" value="<%= campground.image2 %>" >
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="url" name="campground[image3]" id="image3" value="<%= campground.image3 %>" >
+                </div>
+                
+                <div class="form-group">
+                    <label for="location">Location<span style="color:red;"> *</span></label>
+                    <input class="form-control" type="text" name="location" id="locationTextField" value="<%= campground.location %>" required>
+                </div>
+                
+                <div class="form-group">
+                <label for="cost">Cost<span style="color:red;"> *</span></label>
+                <input class="form-control" type="text" name="campground[cost]" id="cost" maxlength="6" value="<%= campground.cost %>" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Detail<span style="color:red;"> *</span></label>
+                    <textarea class="form-control" type="text" id="userInput" onkeyup="wordsTotal()" onkeydown="if (this.value.length >=1000) {return false;}" name="campground[description]" id="description" rows="10" cols="50" required><%= campground.description %></textarea>                    
+                <br>
+                     You Have <span id="display">1000</span> Characters Left.
+                </div>
+                <P>
+                 All<span style="color:red;"> * </span>are required
+                </P>
+                <div class="form-group">
+                    <button class="btn btn-lg btn-primary btn-block">Confirm</button>
+                </div>
+            </form>
+            <a href="/campgrounds/<%= campground._id %>" >Back</a>
+            
+        </div>
+    </div>
+    
+        <script type="text/javascript">
+  function wordsTotal() {
+   
+    var total = document.getElementById('userInput').value.length;
+     
+    document.getElementById('display').innerHTML = 1000-total;
+   
+  }
+</script>
+
+<%- include("../partials/footer") %>
