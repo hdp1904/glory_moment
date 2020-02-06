@@ -4,6 +4,7 @@ module.exports = {
     isLoggedIn: function(req, res, next){
         if(req.isAuthenticated()){
             return next();
+            //
         }
         req.flash("error", "You Must Be Logged In To Access That Page.");
         res.redirect("/login");
