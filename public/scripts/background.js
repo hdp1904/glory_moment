@@ -1,6 +1,7 @@
 var counter = 0;
 function changeBG(){
     var imgs = [
+        //
         "url(https://i.imgur.com/WIdaEZv.jpg)",
         "url(https://i.imgur.com/WcFVNhz.jpg)",
         "url(https://i.imgur.com/lDQMIDZ.jpg)",
