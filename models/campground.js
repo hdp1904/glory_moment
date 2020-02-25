@@ -1,6 +1,7 @@
 var mongoose = require("mongoose");
 
 var campgroundSchema = new mongoose.Schema({
+   // wait to change
    name: String,
    image1: String,
    image2: String,
