@@ -39,7 +39,7 @@ module.exports = {
             if(comment.author.id.equals(req.user._id) || req.user.isAdmin) {
                 next();
             } else {
-                req.flash("error", "You Don’t Have Permission To Access");
+                req.flash("error", "You Don’t Have Permission To Access!");
                 res.redirect("/campgrounds/" + req.params.id);
             }
            }
