@@ -23,7 +23,7 @@ router.post("/",middleware.isLoggedIn,function(req, res){
        } else {
         Comment.create(req.body.comment, function(err, comment){
            if(err){
-               console.log(err);
+               console.log(error);
            } else {
                comment.author.id = req.user._id;
                comment.author.username = req.user.username;
