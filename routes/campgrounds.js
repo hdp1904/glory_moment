@@ -119,7 +119,7 @@ router.get("/:id", function(req, res){
 });
 
 router.get("/:id/edit", middleware.checkUserCampground, function(req, res){
-    console.log("IN EDIT!");
+    console.log("EDIT!");
     Campground.findById(req.params.id, function(err, foundCampground){
         if(err){
             console.log(err);
