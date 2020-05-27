@@ -5,7 +5,7 @@ module.exports = {
         if(req.isAuthenticated()){
             return next();
         }
-        req.flash("error", "You Must Be Logged In To Access That Page.");
+        req.flash("error", "You Must Be Logged In To Access The Page.");
         res.redirect("/login");
     },
     checkUserCampground: function(req, res, next){
