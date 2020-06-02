@@ -45,8 +45,8 @@ router.get("/:commentId/edit", middleware.checkUserComment, function(req, res){
         req.flash("error", "Permission Denied");
         res.redirect("/campgrounds/" + req.params.id);
         }
-        Comment.findById(req.params.commentId, function(err, comment){
-           if(err){
+        Comment.findById(req.params.commentId, function(error, comment){
+           if(error){
             res.redirect("/campgrounds/" + req.params.id);
         } else {
             res.render("comments/edit", {campground_id: req.params.id, comment: comment});
