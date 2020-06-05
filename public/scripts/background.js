@@ -16,6 +16,6 @@ function changeBG(){
     counter++;
 }
   
-  setInterval(changeBG, 6000);
+  setInterval(changeBG, 8000);
 
 
