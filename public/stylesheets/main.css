@@ -4,7 +4,8 @@
 }
 
 .thumbnail {
-    padding: 30;
+    padding: 30px;
+    margin:40px;
 }
 
 .thumbnail .caption-full {
