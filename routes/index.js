@@ -72,7 +72,7 @@ router.post('/forgot', function(req, res, next) {
     function(token, done) {
       User.findOne({ email: req.body.email }, function(err, user) {
         if (!user) {
-          req.flash('error', 'Sorry, We Were Unable To Find An Email Address That Matched Your Search.');
+          req.flash('error', 'Sorry, We Were Unable To Find An Email Address That Matched Your Search');
           return res.redirect('/forgot');
         }
 
