@@ -3,7 +3,7 @@
     background-position: center; 
     transition: background 3.5s linear;
     -webkit-backface-visibility: hidden;
-    webkit-transition: background-image 5.5s linear;
+    webkit-transition: background-image 5.0s linear;
     -webkit-transform:translate3d(0,0,0);
 }
 
@@ -30,7 +30,7 @@ h1 {
 
 
 .content{
-	padding-top: 20%;
+	padding-top: 30%;
 /* 	text-align: center; */
 }
 
