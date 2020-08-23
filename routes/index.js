@@ -152,7 +152,7 @@ router.post('/reset/:token', function(req, res) {
       var smtpTransport = nodemailer.createTransport({
         service: 'Gmail', 
         auth: {
-          user: 'thatsallco@gmail.com',
+          user: 'test@gmail.com',
           pass: process.env.GMAILPW
         }
       });
