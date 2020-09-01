@@ -103,7 +103,7 @@ router.post('/forgot', function(req, res, next) {
       };
       smtpTransport.sendMail(mailOptions, function(err) {
         console.log('mail sent');
-        req.flash('success', 'An email has already been sent to' + user.email + 'Please check your email inbox for a link to complete the reset.');
+        req.flash('success', 'An email has already been sent to' + user.email + 'Please check your email inbox for a link to complete the reset');
         done(err, 'done');
       });
     }
