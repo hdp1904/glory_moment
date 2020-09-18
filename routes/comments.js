@@ -8,7 +8,7 @@ router.get("/new", middleware.isLoggedIn, function(req, res){
     console.log(req.params.id);
     Campground.findById(req.params.id, function(err, campground){
         if(err){
-            console.log(error!);
+            console.log(error);
         } else {
              res.render("comments/new", {campground: campground});
         }
