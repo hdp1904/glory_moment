@@ -88,13 +88,13 @@ router.post('/forgot', function(req, res, next) {
       var smtpTransport = nodemailer.createTransport({
         service: 'Gmail', 
         auth: {
-          user: 'thatsallco@gmail.com',
+          user: 'thatsallco1@gmail.com',
           pass: process.env.GMAILPW
         }
       });
       var mailOptions = {
         to: user.email,
-        from: 'thatsallco@gmail.com',
+        from: 'thatsallco1@gmail.com',
         subject: 'Password Reset Support',
         text: 'Thanks for registering for an account on Glory Moment\n\n' +
           'Continue below to set your new password:\n\n' +
@@ -158,7 +158,7 @@ router.post('/reset/:token', function(req, res) {
       });
       var mailOptions = {
         to: user.email,
-        from: 'thatsallco@gmail.com',
+        from: 'thatsallco1@gmail.com',
         subject: 'Glory Moment',
         text: 'Hi there,\n\n' +
           'Your Email account' + user.email + ' The New Password is already set up\n\n' +
