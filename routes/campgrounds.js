@@ -143,7 +143,7 @@ router.put("/:id", middleware.checkUserCampground, function(req, res){
             req.flash("error", "Error Info, Please Try Again!");
             res.redirect("/campgrounds");
         } else {
-            req.flash("success","Successfully Updated !");
+            req.flash("success","Successfully Updated");
             res.redirect("/campgrounds/" + campground._id);
         }
     });
