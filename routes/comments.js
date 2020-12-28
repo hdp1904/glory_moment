@@ -59,7 +59,7 @@ router.put("/:commentId", function(req, res){
    Comment.findByIdAndUpdate(req.params.commentId, req.body.comment, function(err, comment){
        if(err){
            res.render("edit");
-           console.error(error);
+           console.error(err);
        } else {
            res.redirect("/campgrounds/" + req.params.id);
        }
