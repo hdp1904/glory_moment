@@ -140,7 +140,7 @@ router.put("/:id", middleware.checkUserCampground, function(req, res){
     req.body.campground.location = data[0].formattedAddress;
     Campground.findByIdAndUpdate(req.params.id, req.body.campground, function(err, campground){
         if(err){
-            req.flash("error", "Error Info, Please Try Again!");
+            req.flash("error", "Error Info, Please Try Again");
             res.redirect("/campgrounds");
         } else {
             req.flash("success","Successfully Updated");
