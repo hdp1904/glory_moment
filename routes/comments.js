@@ -69,7 +69,7 @@ router.put("/:commentId", function(req, res){
 router.delete("/:commentId",middleware.checkUserComment, function(req, res){
     Comment.findByIdAndRemove(req.params.commentId, function(err){
         if(err){
-            console.log("error!");
+            console.log("error");
         } else {
             res.redirect("/campgrounds/" + req.params.id);
         }
