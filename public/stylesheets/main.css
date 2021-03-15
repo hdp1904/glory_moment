@@ -1,11 +1,11 @@
 .thumbnail img {
     width: 100%;
-    height:25px;
+    height: 25px;
 }
 
 .thumbnail {
     padding: 55px;
-    margin:45px;
+    margin: 45px;
 }
 
 .thumbnail .caption-full {
