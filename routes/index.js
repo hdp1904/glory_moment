@@ -29,7 +29,7 @@ router.post("/register", function(req, res){
     }
     User.register(newUser, req.body.password, function(err, user){
         if(err){
-            console.log(err);
+            console.log(error);
             req.flash("err", err.message);
             return res.render("register");
         }
