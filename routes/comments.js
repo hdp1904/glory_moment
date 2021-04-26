@@ -42,7 +42,7 @@ router.post("/",middleware.isLoggedIn,function(req, res){
 router.get("/:commentId/edit", middleware.checkUserComment, function(req, res){
     Campground.findById(req.params.id, function(err, campground) {
         if (err || !campground) {
-        req.flash("error", "Permission Denied!");
+        req.flash("error", "Permission Denied");
         res.redirect("/campgrounds/" + req.params.id);
         }
         Comment.findById(req.params.commentId, function(error, comment){
