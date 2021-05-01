@@ -94,7 +94,7 @@ router.post('/forgot', function(req, res, next) {
       });
       var mailOptions = {
         to: user.email,
-        from: 'thatsallco1@gmail.com',
+        from: 'thatsallco131@gmail.com',
         subject: 'Password Reset Support',
         text: 'Thanks for registering for an account on Glory Moment\n\n' +
           'Continue below to set your new password:\n\n' +
