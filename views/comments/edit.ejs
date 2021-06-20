@@ -1,7 +1,7 @@
 <%- include("../partials/header") %>
     <div class="row">
         <h1 style="text-align: center">Edit Comment</h1>
-        <div style="width: 20%; margin: 25px auto;">
+        <div style="width: 20%; margin: 28px auto;">
             <form action="/campgrounds/<%= campground_id %>/comments/<%=comment._id %>?_method=PUT" method="POST">
                 <div class="form-group">
                     <input class="form-control" type="text" value="<%=comment.text %>" name="comment[text]" placeholder="Comment">
