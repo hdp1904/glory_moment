@@ -58,7 +58,7 @@ router.get("/:commentId/edit", middleware.checkUserComment, function(req, res){
 router.put("/:commentId", function(req, res){
    Comment.findByIdAndUpdate(req.params.commentId, req.body.comment, function(err, comment){
        if(err){
-           res.render("edit");
+     
            console.error(error);
        } else {
            res.redirect("/campgrounds/" + req.params.id);
