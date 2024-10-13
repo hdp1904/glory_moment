@@ -11,7 +11,7 @@
      
     </div>
     <div class="col-md-8 col-sm-7 col-xs-12">
-     
+        <h3><%= user.username %>'s Topic</h3>
         <ul>
        <% campgrounds.forEach(function(campground) { %>
         <li><a href="/campgrounds/<%= campground.id %>"><%= campground.name %></a></li>
