@@ -11,7 +11,7 @@ function changeBG(){
         "url(https://i.imgur.com/5vovkQy.jpg)"
       ]
     
-    if(counter === imgs.length) counter = 0;
+
     $("body").css("background-image", imgs[counter]);
     counter++;
 }
