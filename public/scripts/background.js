@@ -8,7 +8,7 @@ function changeBG(){
         "url(https://i.imgur.com/JzM3zA2.jpg)",
         "url(https://i.imgur.com/DXblbGV.png)",
         "url(https://i.imgur.com/w1wns5f.jpg)",
-        "url(https://i.imgur.com/5vovkQy.jpg)"
+   
       ]
     
     if(counter === imgs.length) counter = 0;
