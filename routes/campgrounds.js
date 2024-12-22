@@ -14,7 +14,7 @@ var options = {
 var geocoder = NodeGeocoder(options);
 
 router.get("/about", function(req, res){
-
+    res.render("about");
 });
 
 router.get("/", function(req, res){
