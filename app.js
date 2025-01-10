@@ -18,7 +18,7 @@ var express     = require("express"),
     campgroundRoutes = require("./routes/campgrounds"),
     indexRoutes      = require("./routes/index")
     
-mongoose.set('useUnifiedTopology', true);
+
 mongoose.connect("mongodb://username:password@:port", { useNewUrlParser: true ,useCreateIndex: true});
 mongoose.Promise = global.Promise;
 
