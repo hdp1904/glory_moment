@@ -15,7 +15,7 @@ module.exports = {
                req.flash("error", "You Don’t Have Permission To Access");
                res.redirect("/campgrounds/");
            }  else {
-     
+            if(campground.author.id.equals(req.user._id) || req.user.isAdmin) {
                 next();
             } else {
                 req.flash("error", "You Must Be Logged In To Access That Page.");
