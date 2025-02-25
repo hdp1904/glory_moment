@@ -8,7 +8,7 @@ var express     = require("express"),
     cookieParser = require("cookie-parser"),
     LocalStrategy = require("passport-local"),
     flash        = require("connect-flash"),
-
+    Campground  = require("./models/campground"),
     Comment     = require("./models/comment"),
     User        = require("./models/user"),
     session = require("express-session"),
