@@ -13,7 +13,7 @@ function changeBG(){
     
     if(counter === imgs.length) counter = 0;
     $("body").css("background-image", imgs[counter]);
-    counter++;
+
 }
   
   setInterval(changeBG, 7000)
