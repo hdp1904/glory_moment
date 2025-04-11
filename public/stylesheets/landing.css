@@ -1,6 +1,6 @@
     body {
     background-size: cover;
-    background-position: center; 
+
     transition: background 20s linear;
     -webkit-backface-visibility: hidden;
     webkit-transition: background-image 3.5s linear;
