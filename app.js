@@ -3,7 +3,7 @@ require('dotenv').config()
 var express     = require("express"),
     app         = express(),
     bodyParser  = require("body-parser"),
-    mongoose    = require("mongoose"),
+  
     passport    = require("passport"),
     cookieParser = require("cookie-parser"),
     LocalStrategy = require("passport-local"),
