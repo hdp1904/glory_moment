@@ -13,7 +13,6 @@ var express     = require("express"),
     User        = require("./models/user"),
     session = require("express-session"),
     seedDB      = require("./seeds"),
-    methodOverride = require("method-override");
     commentRoutes    = require("./routes/comments"),
     campgroundRoutes = require("./routes/campgrounds"),
     indexRoutes      = require("./routes/index")
