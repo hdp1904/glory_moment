@@ -12,7 +12,7 @@ module.exports = {
         if(req.isAuthenticated()){
             Campground.findById(req.params.id, function(err, campground){
             if(err || !campground){
-      
+               req.flash("error", "You Don’t Have Permission To Access");
                res.redirect("/campgrounds/");
            }  else {
             if(campground.author.id.equals(req.user._id) || req.user.isAdmin) {
