@@ -1,1 +1,17 @@
-
+<%- include("partials/header") %>
+<div class="row">
+	<div class="col-md-12">
+		<form action="/forgot" method="POST">
+			<legend>Please Enter The Email Address Linked To Your Account</legend>
+			<div class="form-group">
+				<label for="email">This action will reset your pasword, proceed anyway?</label>
+				<input type="email" name="email" autofocus class="form-control" required title="Email is required" placeholder="john@gmail.com">
+			</div>
+			<div class="form-group">
+				<input type="submit" class="btn btn-danger" value="Submit">
+				<a href="/login" >Cancel</a>
+			</div>
+		</form>
+	</div>
+</div>
+<%- include("partials/footer") %>
