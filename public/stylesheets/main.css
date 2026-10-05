@@ -1,1 +1,45 @@
+.thumbnail img {
+    width: 100%;
+    height: 18px;
+}
 
+.thumbnail {
+    padding: 55px;
+    margin: 50px;
+}
+
+.thumbnail .caption-full {
+    padding: 20px;
+}
+
+#delete-form {
+    display:inline;
+}
+
+.tab-pane img {
+    padding: 20px;
+    width: 100%;
+}
+
+/* Google Maps */
+#map {
+    height: 500px;
+    width: 100%;
+}
+
+#haha {
+    z-index: -1;
+}
+
+.jumbotron {
+  color: white;
+  background-image: url("https://i.imgur.com/10IK0GI.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 60%;
+  min-height:400px;
+}
+
+.container {
+    padding-left: 5px;
+}
